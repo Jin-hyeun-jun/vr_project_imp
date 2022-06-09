@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class timeattack : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class timeattack : MonoBehaviour
         limittime -= Time.deltaTime;
         if(limittime==0)
         {
-
+            SceneManager.LoadScene("failending");
         }
     }
 }
