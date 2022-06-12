@@ -7,6 +7,8 @@ public class Scene2Player : MonoBehaviour
 {
 
     private bool clue2filped = false;
+    public AudioSource turningSound;
+
     public void OnShot(SelectEnterEventArgs args)
     {
         if (args.interactableObject.transform.gameObject.tag == "sc2clue2")
@@ -24,7 +26,8 @@ public class Scene2Player : MonoBehaviour
                 clue2filped = false;
             }
 
-
+            if(turningSound != null)
+                turningSound.Play();
             //Destroy(args.interactableObject.transform.gameObject);
         }
 
