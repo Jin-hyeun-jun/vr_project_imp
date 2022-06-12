@@ -7,7 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class handler : XRBaseInteractable
 {
     public UnityEvent onPress=null;
-
+    public GameObject key;
     private float previousHandHeight = 0.0f;
     private XRBaseInteractor hoverInteractor = null;
     private bool previousPress = false;
@@ -20,6 +20,7 @@ public class handler : XRBaseInteractable
         base.Awake();
         onHoverEntered.AddListener(StartPress);
         onHoverExited.AddListener(EndPress);
+        key.SetActive(false);
     }
 
     private void OnDestroy()
@@ -55,6 +56,10 @@ public class handler : XRBaseInteractable
         yMax = transform.position.y;
 
 
+    }
+    public void GetKey()
+    {
+        key.SetActive(true);
     }
     public override void ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase updatePhase)
     {
