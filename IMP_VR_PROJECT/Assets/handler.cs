@@ -67,7 +67,7 @@ public class handler : XRBaseInteractable
             float newPosition = transform.localPosition.y - HandDifference;
             SetYPosition(newPosition);
 
-            //CheckPress();
+            CheckPress();
          
         }
 

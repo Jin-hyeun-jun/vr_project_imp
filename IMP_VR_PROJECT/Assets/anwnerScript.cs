@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class anwnerScript : MonoBehaviour
 {
+    GameObject answer;
     public GameObject GameObject;
+
     public void key()
     {
-        Instantiate(gameObject, new Vector3(0, 0.5f, 0), Quaternion.identity);
+        Debug.Log("key!");
+        answer=Instantiate(gameObject, new Vector3(1,1,1), Quaternion.identity);
+        
     }
 }
