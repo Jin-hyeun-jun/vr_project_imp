@@ -25,12 +25,12 @@ public class colorChanged : MonoBehaviour
         interactable.onHoverExited.RemoveListener(SetOriginalMaterial);
     }
 
-    private void SetSelectMaterial(XRBaseInteractor interactor)
+    public void SetSelectMaterial(XRBaseInteractor interactor)
     {
         meshRenderer.material = selectMaterial;
     }
 
-    private void SetOriginalMaterial(XRBaseInteractor interactor)
+    public void SetOriginalMaterial(XRBaseInteractor interactor)
     {
         meshRenderer.material = originalMaterial;
     }
