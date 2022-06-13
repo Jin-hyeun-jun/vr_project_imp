@@ -824,6 +824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endingsound: {fileID: 1307064220}
+  endtime: 10
 --- !u!4 &1307064222
 Transform:
   m_ObjectHideFlags: 0

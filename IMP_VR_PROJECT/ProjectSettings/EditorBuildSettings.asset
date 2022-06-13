@@ -14,9 +14,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene2.unity
     guid: 6eeb2bf2597813d41a1d4904f97e02d5
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: "Assets/Scenes/\uC5EC\uAE30\uB294 \uC5EC\uAC74 \uB418\uBA74 \uD558\uC8E0/successending.unity"
-    guid: f81f539756203664caed735fef92a878
+    path: Assets/Scenes/Ending_Fail.unity
+    guid: 2dfa089f7763c6249a660d277e658994
+  - enabled: 1
+    path: Assets/Scenes/Ending_Success.unity
+    guid: 7ad283c167df90a43943cf25648f8166
+  - enabled: 1
+    path: Assets/Scenes/intro.unity
+    guid: 62ed1a04d6588d849a3756cf65a64924
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3fb7373a18923564ba6e21d4f9f0ca0b, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6dfac7a6649e2204fa75f715108fc547, type: 2}
