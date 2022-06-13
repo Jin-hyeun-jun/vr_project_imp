@@ -6,38 +6,36 @@ using UnityEngine.SceneManagement;
 public class timeattack : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float limittime;
+    public float limittime=60.0f;
     public AudioSource witchvoice;
 
-    void Start()
-    {
-        
-    }
+  
 
     // Update is called once per frame
     void Update()
     {
         limittime -= Time.deltaTime;
-        if(limittime==30.0)
+        if(limittime==30.0f)
+        {
+            Debug.Log("30");
+            witchvoice.Play();
+        }
+        if (limittime == 15.0f)
         {
             witchvoice.Play();
         }
-        if (limittime == 15.0)
+        if (limittime == 10.0f)
         {
             witchvoice.Play();
         }
-        if (limittime == 10.0)
-        {
-            witchvoice.Play();
-        }
-        if (limittime == 5.0)
+        if (limittime == 5.0f)
         {
             witchvoice.Play();
         }
 
-        if (limittime==0)
+        if (limittime==0f)
         {
-            SceneManager.LoadScene("failending");
+            SceneManager.LoadScene("Ending_Fail");
         }
 
     }

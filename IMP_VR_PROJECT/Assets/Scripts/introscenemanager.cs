@@ -7,18 +7,13 @@ public class introscenemanager : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    AudioSource witchvoice;
     void Start()
     {
-        witchvoice.Play();
+        Invoke("gotoscene1", 5f);
     }
 
     // Update is called once per frame
-    void Update()
-    {
-
-        Invoke("gotoscene1",5f);
-    }
+   
 
 
     void gotoscene1()
