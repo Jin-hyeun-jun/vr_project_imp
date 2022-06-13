@@ -7,7 +7,7 @@ public class timeattack : MonoBehaviour
 {
     // Start is called before the first frame update
     public float limittime;
-    AudioSource witchvoice;
+    public AudioSource witchvoice;
 
     void Start()
     {
