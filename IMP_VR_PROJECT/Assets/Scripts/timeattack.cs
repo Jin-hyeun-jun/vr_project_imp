@@ -15,7 +15,7 @@ public class timeattack : MonoBehaviour
     void Update()
     {
         limittime -= Time.deltaTime;
-        if (limittime < 17f && i == 0)
+        if (limittime < 13.5f && i == 0)
         {
            
             witchvoice.Play();
