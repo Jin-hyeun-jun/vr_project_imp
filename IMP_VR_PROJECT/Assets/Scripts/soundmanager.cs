@@ -5,16 +5,23 @@ using UnityEngine;
 public class soundmanager : MonoBehaviour
 {
 
-    AudioSource endingsound;
+    public AudioSource endingsound;
+    public float endtime;
     // Start is called before the first frame update
     void Start()
     {
-        
+        endingsound.Play();
+        Invoke("end", endtime);
     }
 
-    // Update is called once per frame
-    void Update()
+    void end()
     {
-        endingsound.Play();
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+    Application.Quit();
+#endif
     }
+    // Update is called once per frame
+
 }
