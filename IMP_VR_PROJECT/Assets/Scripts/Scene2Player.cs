@@ -8,10 +8,11 @@ public class Scene2Player : MonoBehaviour
 
     private bool clue2filped = false;
     public AudioSource turningSound;
+    private bool enableTurningPaper = false;
 
-    public void OnShot(SelectEnterEventArgs args)
+    public void TurningOverPaper(SelectEnterEventArgs args)
     {
-        if (args.interactableObject.transform.gameObject.tag == "sc2clue2")
+        if (args.interactableObject.transform.gameObject.tag == "sc2clue2" && enableTurningPaper)
         {
             //y가 - 180, z가 - 60 아닐때는 z가 -120
             GameObject myclue = args.interactableObject.transform.gameObject;
@@ -28,9 +29,12 @@ public class Scene2Player : MonoBehaviour
 
             if(turningSound != null)
                 turningSound.Play();
-            //Destroy(args.interactableObject.transform.gameObject);
         }
 
     }
 
+    public void enableHint(SelectEnterEventArgs args)
+    {
+        enableTurningPaper = true;
+    }
 }
