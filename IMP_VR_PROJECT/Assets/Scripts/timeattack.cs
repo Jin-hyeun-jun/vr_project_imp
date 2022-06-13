@@ -7,6 +7,8 @@ public class timeattack : MonoBehaviour
 {
     // Start is called before the first frame update
     public float limittime;
+    AudioSource witchvoice;
+
     void Start()
     {
         
@@ -16,9 +18,27 @@ public class timeattack : MonoBehaviour
     void Update()
     {
         limittime -= Time.deltaTime;
-        if(limittime==0)
+        if(limittime==30.0)
+        {
+            witchvoice.Play();
+        }
+        if (limittime == 15.0)
+        {
+            witchvoice.Play();
+        }
+        if (limittime == 10.0)
+        {
+            witchvoice.Play();
+        }
+        if (limittime == 5.0)
+        {
+            witchvoice.Play();
+        }
+
+        if (limittime==0)
         {
             SceneManager.LoadScene("failending");
         }
+
     }
 }
