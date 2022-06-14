@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class anwnerScript : MonoBehaviour
+public class answerScript : MonoBehaviour
 {
     GameObject answer;
     public GameObject GameObject;
