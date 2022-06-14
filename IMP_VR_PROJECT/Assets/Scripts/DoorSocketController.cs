@@ -20,7 +20,7 @@ public class DoorSocketController : MonoBehaviour
             successSound.Play();
         //success scene으로 넘어가기
         MyScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene("successending", LoadSceneMode.Single);
+        SceneManager.LoadScene("Ending_Success", LoadSceneMode.Single);
         SceneManager.UnloadSceneAsync(MyScene);
 
     }
